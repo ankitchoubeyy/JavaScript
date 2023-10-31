@@ -9,7 +9,7 @@ else console.log("Not allow");
 
 /*
 -------- Falsy values ---------------
-false,-0,0, BigInt 0n, "", null, undefine, NaN
+false,-0, 0, BigInt 0n, "", null, undefine, NaN
 
 
 ---------Truthy Values -------------------
