@@ -17,3 +17,36 @@ document.getElementByTagName(p);
 
 5. **document.querySelectorAll()** : This method returns all the elements that match the specified CSS selector in the document.
 
+# DOM Manipulation
+
+## To Change content
+
+1. **.innerHTML** : returns/sets all text, including html tags, that is contained by an element.
+
+*example*
+```
+document.getElementById("heading").innerHTML = "<h1>Heading</h1>"
+```
+
+2. **.innerContent** : returns all text contained by an element and all its children that are for formatting purposes only.
+
+*example*
+```
+let newContent = document.getElementById("heading").innerContent;
+
+```
+
+3. **.innerText** : returns all text contained by an element and all its child elements.
+
+*example*
+```
+let newTitle = document.getElementById("heading").innerText;
+newTitle = "New Heading"
+```
+
+## To add styling using js
+
+```
+let newTitle = document.getElementById("heading");
+newTitle.style.paddding = "15px" 
+```
