@@ -19,7 +19,7 @@ document.getElementByTagName(p);
 
 # DOM Manipulation
 
-## To Change content
+### To Change content
 
 1. **.innerHTML** : returns/sets all text, including html tags, that is contained by an element.
 
@@ -44,7 +44,7 @@ let newTitle = document.getElementById("heading").innerText;
 newTitle = "New Heading"
 ```
 
-## To add styling using js
+### To add styling using js
 
 ```
 let newTitle = document.getElementById("heading");
