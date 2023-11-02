@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Creation</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        let div = document.createElement("div");
+        div.className = "main";
+        div.id = "mainBox"
+        div.style.backgroundColor = "red"
+        div.style.padding = "12px"
+        div.style.fontSize = "30px"
+        div.style.color = "white"
+
+        const addText = document.createTextNode("This is Heading");
+        
+        // Pushing text into the div Element
+        div.appendChild(addText)
+        // pushing div into the body 
+        document.body.appendChild(div);
+
+    </script>
+</body>
+
+</html>
