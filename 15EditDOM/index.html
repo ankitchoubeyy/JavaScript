@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit DOM</title>
+</head>
+
+<body>
+    <ul class="language">
+        <li>Python</li>
+    </ul>
+
+    <script>
+        // Add Language
+        function addLanguage(langName) {
+            let list = document.createElement("li")
+            list.innerHTML = `${langName}`;
+            document.querySelector('.language').appendChild(list);
+        }
+        addLanguage("c++");
+        addLanguage("JavaScript");
+        addLanguage("React");
+
+
+        // ----------------- Edit --------------
+        const firstLanguage = document.querySelector("li:first-child");
+        firstLanguage.innerHTML = "Mojo";
+        
+        // ----------------- Remove --------------
+        const lastLanguage = document.querySelector("li:last-child");
+        lastLanguage.remove(); // React will we displayed
+
+    </script>
+</body>
+
+</html>
