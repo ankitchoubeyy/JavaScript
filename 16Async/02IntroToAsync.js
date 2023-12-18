@@ -16,6 +16,6 @@ function greeting() {
   await greeting();
   console.log("Printing greeting 4");
   await greeting();
-})();
+})(); // IIFE is used to avoid unnecessary calls.
 
 console.log("Hello, Everyone");
