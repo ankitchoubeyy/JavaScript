@@ -45,7 +45,7 @@ const promiseFour = new Promise((resolve, reject) => {
   }, 2000);
 });
 
-promiseFour
+promiseFour()
   .then((user) => {
     console.log(user);
     return user.password;
